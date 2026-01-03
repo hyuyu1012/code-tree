@@ -15,7 +15,7 @@ public class Main {
                 widthAvg += arr[i][j];
                 entireAvg += arr[i][j];
             }
-            System.out.print(widthAvg/4.0 + " ");
+            System.out.printf("%.1f ", widthAvg/4.0);
             widthAvg = 0;
         }
         System.out.println();
@@ -24,9 +24,10 @@ public class Main {
             for(int j = 0; j < 2; j++) {
                 heightAvg += arr[j][i];
             }
-            System.out.print(heightAvg/2.0 + " ");
+            System.out.printf("%.1f ", heightAvg/2.0);
+            heightAvg = 0;
         }
         System.out.println();
-        System.out.println(entireAvg/8.0 + " ");
+        System.out.printf("%.1f ", entireAvg/8.0);
     }
 }
